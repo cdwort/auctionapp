@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20130302182902) do
 
   create_table "auction_items", force: true do |t|
     t.string   "name"
-    t.time     "endTime"
+    t.datetime "endTime"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
