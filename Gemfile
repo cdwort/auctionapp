@@ -19,6 +19,10 @@ end
 
 gem 'jquery-rails'
 
+group :test, :development do
+    gem 'rspec-rails', '~> 2.0'
+end
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
