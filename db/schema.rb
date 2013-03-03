@@ -15,12 +15,16 @@ ActiveRecord::Schema.define(version: 20130302191141) do
 
   create_table "auction_items", force: true do |t|
     t.string   "name"
-    t.datetime "endTime"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "donor_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "bids", force: true do |t|
+    t.integer  "auction_item_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
